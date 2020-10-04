@@ -1,10 +1,17 @@
-# How to Install Tailwindcss In Vite
+# How to Install Tailwind CSS In Vite
+
+If you’re starting a new Vite project, you might want to consider using Tailwind CSS. It requires some time to learn all the utility classes, but your rarely have to write CSS anymore.
+
+
+## Why Vite?
 
 [Vite](https://github.com/vitejs/vite) is an opinionated web dev build tool that serves your code via native ES Module imports during dev and bundles it with Rollup for production.
 
+## Installation steps
+
 > Note Vite comes with vue 3 by default
 
-First let's create new vite project:
+First, let's create new vite project:
 
 ```shell
 npm init vite-app <project-name>
@@ -24,7 +31,7 @@ Create your Tailwind config file
 npx tailwindcss init
 ```
 
-Vite automatically applies your PostCSS config to all styles in *.vue files and imported plain .css files. Just add a postcss.config.js in your project root.
+Vite automatically applies your PostCSS config to all styles in *.vue files and imported plain .css files. Create a postcss.config.js in your project root.
 
 ```
 touch postcss.config.js
@@ -55,4 +62,4 @@ Finally you have to import app.css to main.js file
 import './assets/app.css'
 ```
 
-And Every things ready to go.
+That's it! Now your project is ready to use all the tailwind css utilities in your new Vue / Vite project.
