@@ -1,8 +1,8 @@
-# What's coming in tailwindcss v2
+# What's new in TailwindCss v2
 
 Tailwind Css frameworks keeps moving fast and many of the features for v2 are already known. The upgrade looks like it will be easy with a few breaking changes. As the release will probably come in November, we'll try to update the post as new features are announced.
 
-You can start using most of the new features, as they are already deployed in 1.8, behind feature flags.
+You can start using most of the new features, as they are already deployed in 1.8 behind feature flags.
 
 ## Remove deprecated gap utilities
 
