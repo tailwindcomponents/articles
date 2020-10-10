@@ -1,63 +1,42 @@
 # What's coming in tailwindcss v2
 
-Hello everyone today I will talk about some break changes and the new feature will come in Tailwindcss  v2.0.
+Tailwind Css frameworks keeps moving fast and many of the features for v2 are already known. The upgrade looks like it will be easy with a few breaking changes. As the release will probably come in november, we'll try to update the post as new features are announced.
 
-Tailwindcss follows semantic versioning, so will never introduce breaking changes until a new major release (v2.0 is the next one).
+You can start using most of the new features, as they are already deployed in 1.8, behind feature flags.
 
 ## Remove deprecated gap utilities
 
-In  v1.7.0 introduced new `gap-x-{n}` and `gap-y-{n}` utilities to replace the existing `col-gap-{n}` and `row-gap-{n}` utilities. the old utilities still working but will be removed in v2.0.
+Since v1.7.0, you had available `gap-x-{n}` and `gap-y-{n}` making `col-gap-{n}` and `row-gap-{n}` redundant.
 
-All Tailwindcss breaking changes are currently available in Tailwind behind flags and you can use these flags to remove old utilities or add the upcoming features.
-
-To remove old gap utilities you can use `removeDeprecatedGapUtilities` flag:
+To enable the flag and use the 2.0 behavior, you can can use `removeDeprecatedGapUtilities` flag on your project's `tailwind.config.js`:
 
 ```jsx
-// tailwind.config.js
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
   },
-  // ...
 }
 ```
 
 ## Purge layers by default
 
-In v1.8.0 introduced new layers purge mode which will be the default in v2.0. It purges all layers (base, components, and utilities) by default, whereas the previous default mode (conservative, now deprecated) only purged the utility layer.
+The current behavior of the included purgecss only works on the `@utilities` block (it represents the major part of the total build size). In 2.0, it purge utilities from `base`, `components` and `utilities`, so you can expect a smaller build size.
 
-using the new layers mode by default, use the `purgeLayersByDefault` flag:
+To use the new behavior, add to your `tailwind.config.js` the following snippet:
 
 ```jsx
-// tailwind.config.js
 module.exports = {
   future: {
     purgeLayersByDefault: true,
   },
-  // ...
+
 }
 ```
 
-If you'd like to only purge the `utilities` layer (like the `conservative` mode did), you can still opt-in with this flag, but then explicitly specify that you'd only like to purge the utility layer:
-
-```jsx
-// tailwind.config.js
-module.exports = {
-  future: {
-    purgeLayersByDefault: true,
-  },
-  purge: {
-    layers: ['utilities'],
-    content: [
-      // Paths to your templates...
-    ],
-  },
-  // ...
-}
-```
+You can also [configure the layers to be purged](https://tailwindcss.com/docs/upcoming-changes#purge-layers-by-default).
 
 ## New Color Scheme
 
-Steve Schoger working on new color 
+[Steve Schoger](https://twitter.com/steveschoger) is working on new color palette that expands the current one, but it isn't available yet, so you have to wait to 2.0 to try it.
 
 ![EhAGi5JXgAMLSt7.jpeg](EhAGi5JXgAMLSt7.jpeg)
