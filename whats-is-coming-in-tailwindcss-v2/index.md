@@ -1,4 +1,4 @@
-# What's new in TailwindCss v2
+# What's new in TailwindCss 2.0
 
 Tailwind Css frameworks keeps moving fast and many of the features for v2 are already known. The upgrade looks like it will be easy with a few breaking changes. As the release will probably come in November, we'll try to update the post as new features are announced.
 
