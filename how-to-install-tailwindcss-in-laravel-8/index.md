@@ -1,6 +1,6 @@
 # How to Install Tailwindcss In Laravel 8
 
-There are many ways to install TailwindCss on a fresh Laravel 8 install. You can configure your application by yourself or use a Preset to do it faster. We'll start with the custom one, skip to the end to check available presets.
+There are many ways to install Tailwindcss on a fresh Laravel 8 install. You can configure your application by yourself or use a Preset to do it faster. We'll start with the custom one, skip to the end to check available presets.
 
 ## Install Tailwindcss
 
@@ -47,7 +47,7 @@ npm run dev
 
 ## Tailwind Css Presets 
 
-There are many presets ready for installing TailwindCss in a Laravel project, some of them even includes few auth components to get the ball rolling:
+There are many presets ready for installing Tailwindcss in a Laravel project, some of them even includes few auth components to get the ball rolling:
 
 - [Jetstream](https://jetstream.laravel.com)
 - [Laravel UI](https://github.com/laravel/ui)
