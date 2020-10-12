@@ -1,6 +1,6 @@
 # How to Install Tailwindcss In Laravel 8
 
-There are many ways to install tailwindcss in the fresh laravel 8 projects you can configure your application by yourself or use Preset to going fast. 
+There are many ways to install TailwindCss on a fresh Laravel 8 install. You can configure your application by yourself or use a Preset to do it faster. We'll start with the custom one, skip to the end to check available presets.
 
 ## Install Tailwindcss
 
@@ -12,7 +12,7 @@ npm install tailwindcss
 
 ## Add Tailwindcss to your `resources/css/app.css`
 
-You don't have to install autoprefixer or postcss-import it's coming by default with laravel mix
+You don't have to install autoprefixer or postcss-import, because it's already installed with laravel mix
 
 ```css
 @import "tailwindcss/base";
@@ -39,15 +39,15 @@ mix.js('resources/js/app.js', 'public/js')
 
 ## Compile your assets
 
-Now you can compile your assets and you are ready to go
+Finish by compiling your assets and you'll be ready.
 
 ```
 npm run dev
 ```
 
-## Use Preset 
+## Tailwind Css Presets 
 
-They are many presets build for installing tailwindcss in the laravel project you can use them to start fast with authentication UI
+There are many presets ready for installing TailwindCss in a Laravel project, some of them even includes few auth components to get the ball rolling:
 
 - [Jetstream](https://jetstream.laravel.com)
 - [Laravel UI](https://github.com/laravel/ui)
