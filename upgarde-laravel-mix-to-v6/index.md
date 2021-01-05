@@ -6,10 +6,10 @@ Laravel mix v6 comes with support the latest versions of numerous dependencies, 
 
 ```bash
 // npm
-npm install laravel-mix@next postcss@^8.1 --save-dev
+npm install laravel-mix@latest postcss@^8.1 --save-dev
 
 // yarn
-yarn add laravel-mix@next postcss@^8.1 --dev
+yarn add laravel-mix@latest postcss@^8.1 --dev
 ```
 
 ## Update Your NPM Scripts
@@ -70,3 +70,5 @@ mix.js('resources/js/app.js', 'public/js').vue({ version: 2 });
 ```
 
 You can do the same thing for React
+
+For more information you can check [CHANGELOG](https://github.com/JeffreyWay/laravel-mix/blob/master/CHANGELOG.md) and [UPGRADE GUIDE](https://github.com/JeffreyWay/laravel-mix/blob/master/UPGRADE.md)
