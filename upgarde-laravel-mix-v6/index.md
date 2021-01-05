@@ -1,6 +1,6 @@
 # Upgrade laravel mix to v6
 
-Laravel mix v6 comes with support the latest versions of numerous dependencies, including webpack 5, PostCSS 8, Vue Loader 16, and more.
+Laravel mix v6 comes with support the latest versions of numerous dependencies, including webpack 5, PostCSS 8, Vue Loader 16, and more. You can install tailwindcss v2 without compat verion when you upgrade to laravel mix v6, just you have to check your `package.json` dependencies list for any third-party tools or plugins that may not yet be compatible with webpack 5 or PostCSS 8.
 
 
 ## Update Your NPM Scripts
