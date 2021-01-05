@@ -1,6 +1,6 @@
 # Upgrade laravel mix to v6
 
-Laravel mix v6 comes with support the latest versions of numerous dependencies, including webpack 5, PostCSS 8, Vue Loader 16, and more. You can install tailwindcss v2 without compat verion when you upgrade to laravel mix v6, just you have to check your `package.json` dependencies list for any third-party tools or plugins that may not yet be compatible with webpack 5 or PostCSS 8.
+Laravel mix v6 comes with support to the latest versions of numerous dependencies, including webpack 5, PostCSS 8, Vue Loader 16, and more. You can install Tailwindcss v2 without compat verion when you upgrade to laravel mix v6, you only have to check your `package.json` dependencies list for any third-party tools or plugins that may not yet be compatible with webpack 5 or PostCSS 8.
 
 ## Install laravel mix v6 and postcss8
 
@@ -44,7 +44,7 @@ The Webpack 5 CLI removed a number of options that your NPM scripts was likely r
 
 ## API for JavaScript Frameworks
 
-Laravel mix comes with new Javascript API for Vue and React, extracted it to its own "featured flag": mix.vue() and mix.react().
+Laravel mix comes with new Javascript API for Vue and React, extracted to it's own "featured flag": mix.vue() and mix.react().
 
 ### Before 
 
@@ -63,12 +63,12 @@ mix.js('resources/js/app.js', 'public/js').vue();
 mix.js('resources/js/app.js', 'public/js').react();
 ```
 
-If you want to keep using Vue3 with laravel mix 6 Mix will automatically detect whether you have Vue 2 or 3 installed, based on your dependencies list. or you can pass it to your Vue API.
+If you want to keep using Vue3 with Laravel mix, mix v6 will automatically detect whether you have Vue 2 or 3 installed, based on your dependencies list.
 
 ```js
 mix.js('resources/js/app.js', 'public/js').vue({ version: 2 });
 ```
 
-You can do the same thing for React
+You can also do the same thing with React
 
 For more information you can check [CHANGELOG](https://github.com/JeffreyWay/laravel-mix/blob/master/CHANGELOG.md) and [UPGRADE GUIDE](https://github.com/JeffreyWay/laravel-mix/blob/master/UPGRADE.md)
