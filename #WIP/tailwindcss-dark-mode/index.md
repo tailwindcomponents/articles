@@ -1,2 +1,0 @@
-# Tailwindcss dark mode
-
