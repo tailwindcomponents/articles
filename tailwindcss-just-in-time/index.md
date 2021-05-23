@@ -6,7 +6,6 @@
 
 one of the downsides of tailwindcss is that it generates a ton of css code for each rule and variant in your project , for example if we look at its spacing system Tailwind includes a class for a major of included values in addition to the customized values in the `tailwind.config.js` file.he same goes for minimum width, maximum width, height, fonts, colors, and more! As you can imagine, the generated CSS code is huge, and it gets exponentially worse as you add more colors, variants, etc. Out of the box tailwind includes **built-in support for PurgeCSS**, allowing us to get rid of all the unused classes , which is great for production but what about devolpment? That's where the Just-In-Time (JIT) mode comes into play. 
  
-
 ## What is Tailwind JIT
 
 according to the Tailwind Css github page  it's an experimental just-in-time compiler for Tailwind CSS that generates your styles on-demand as you author your templates instead of generating everything in advance at initial build time.
@@ -29,3 +28,26 @@ What this means that the generated css code on your `build.css` file only includ
     
 - **Customized values without customization**
     you can now  just generate a utility for values that are not included in the default system of tailwind  as needed using square bracket notation like `top-[-113px]`. Works with variants too, like `md:top-[-113px]`.cool right!.
+    
+## Enabling JIT mode
+
+To enable just-in-time mode, set the mode option to 'jit' in your tailwind.config.js file:
+```js
+// tailwind.config.js
+module.exports = {
+ mode: 'jit',
+}
+```
+
+and you have to configre you purge css files
+```js
+// tailwind.config.js
+module.exports = {
+ mode: 'jit',
+ // These paths are just examples, customize them to match your project structure
+ purge: [
+  './public/**/*.html',
+  './src/**/*.{js,jsx,ts,tsx,vue}',
+ ],
+}
+```
