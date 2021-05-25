@@ -51,3 +51,5 @@ module.exports = {
  ],
 }
 ```
+
+For more informations about JIT mode check out Tailwind CSS [Docs](https://tailwindcss.com/docs/just-in-time-mode)
